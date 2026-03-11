@@ -124,7 +124,7 @@ width:280px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* DEMO */
+/* DEMO SCRIPT */
 
 .demo{
 max-width:700px;
@@ -172,6 +172,12 @@ font-weight:bold;
 margin-top:15px;
 }
 
+.small{
+opacity:0.7;
+margin-top:20px;
+font-size:14px;
+}
+
 /* FAQ */
 
 .faq{
@@ -180,7 +186,11 @@ margin:auto;
 text-align:left;
 }
 
-/* EMAIL */
+.faq h3{
+margin-top:25px;
+}
+
+/* EMAIL FORM */
 
 .email-box{
 background:white;
@@ -207,40 +217,20 @@ border-radius:6px;
 cursor:pointer;
 }
 
-/* CAROUSEL */
+/* FLOATING BUTTON */
 
-.carousel{
-max-width:900px;
-margin:auto;
-overflow:hidden;
-}
-
-.carousel-track{
-display:flex;
-transition:transform 0.4s ease;
-}
-
-.carousel-item{
-min-width:100%;
-padding:20px;
-}
-
-.reel-card{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-text-align:left;
-}
-
-.carousel-buttons button{
+.floating-btn{
+position:fixed;
+bottom:25px;
+right:25px;
 background:#2b7cff;
 color:white;
-border:none;
-padding:10px 18px;
-margin:5px;
-border-radius:6px;
-cursor:pointer;
+padding:16px 24px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+z-index:999;
 }
 
 /* FOOTER */
@@ -270,6 +260,7 @@ text-align:center;
 <div class="hero" id="join">
 
 <h1>15 High-Converting Reels Every Week</h1>
+
 <p>The authority-building content engine for coaches & mentors.</p>
 
 <a class="button" href="https://rzp.io/rzp/bbEGEbM">
@@ -305,68 +296,22 @@ Become a Founding Member – ₹1599/month
 
 <div class="section">
 
-<h2>Real Reel Examples</h2>
-
-<div class="carousel">
-
-<div class="carousel-track" id="carouselTrack">
-
-<div class="carousel-item">
-<div class="reel-card">
-<b>Hook:</b> 90% of coaches struggle because their content attracts followers, not buyers.
-<br><br>
-<b>Insight:</b> Authority content speaks to problems buyers already pay to solve.
-<br><br>
-<b>CTA:</b> Comment "AUTHORITY".
-</div>
-</div>
-
-<div class="carousel-item">
-<div class="reel-card">
-<b>Hook:</b> If your reels get views but no clients, you're attracting the wrong audience.
-<br><br>
-<b>Insight:</b> Authority content filters serious buyers.
-<br><br>
-<b>CTA:</b> Save this reel.
-</div>
-</div>
-
-<div class="carousel-item">
-<div class="reel-card">
-<b>Hook:</b> Most coaches give too much value for free.
-<br><br>
-<b>Insight:</b> Give insight publicly, sell implementation privately.
-<br><br>
-<b>CTA:</b> Follow for more frameworks.
-</div>
-</div>
-
-</div>
-
-</div>
-
-<div class="carousel-buttons">
-<button onclick="prevSlide()">Prev</button>
-<button onclick="nextSlide()">Next</button>
-</div>
-
-</div>
-
-<div class="section">
-
 <h2>Free Sample Reel Script</h2>
 
 <div class="demo">
 
-<b>Hook:</b> 90% of coaches fail to convert followers into clients.
+<b>Hook:</b>
+90% of coaches struggle to get clients because their content attracts followers, not buyers.
 
 <br><br>
 
-<b>Insight:</b> Buyers respond to authority, not entertainment.
+<b>Insight:</b>
+Authority content speaks directly to problems buyers are already paying to solve.
 
 <br><br>
 
-<b>CTA:</b> Follow for more authority frameworks.
+<b>CTA:</b>
+Follow for more authority-building content frameworks.
 
 </div>
 
@@ -378,7 +323,9 @@ Become a Founding Member – ₹1599/month
 
 <p style="max-width:700px;margin:auto;font-size:18px;line-height:1.6">
 
-ReelPilot helps coaches turn social media content into real clients by giving structured reel frameworks and authority plans.
+ReelPilot was built to help coaches turn social media content into real clients.
+Most creators struggle because they post random content without a clear authority strategy.
+ReelPilot provides structured reels and weekly authority plans designed for conversions.
 
 </p>
 
@@ -398,7 +345,13 @@ ReelPilot helps coaches turn social media content into real clients by giving st
 Start Authority Engine
 </a>
 
-<p class="highlight">Only first 50 founding members get this price.</p>
+<p class="highlight">
+Only first 50 founding members get this price.
+</p>
+
+<p class="small">
+Founding members keep this price forever.
+</p>
 
 </div>
 
@@ -411,13 +364,16 @@ Start Authority Engine
 <div class="faq">
 
 <h3>Do I need editing skills?</h3>
-<p>No. Scripts are ready to use.</p>
+<p>No. You get ready-to-use scripts designed for simple reels.</p>
 
 <h3>Who is this for?</h3>
-<p>Coaches, mentors and consultants building authority.</p>
+<p>Coaches, mentors, consultants and creators building authority.</p>
 
 <h3>How many reels do I get?</h3>
-<p>15 reels every week.</p>
+<p>You receive 15 reels every week.</p>
+
+<h3>Can I cancel anytime?</h3>
+<p>Yes, you can cancel your membership anytime.</p>
 
 </div>
 
@@ -427,27 +383,11 @@ Start Authority Engine
 © ReelPilot AI
 </div>
 
-<script>
+<!-- Floating Button -->
 
-let index = 0;
-const track = document.getElementById("carouselTrack");
-const slides = document.querySelectorAll(".carousel-item");
-
-function updateCarousel(){
-track.style.transform = "translateX(-" + index * 100 + "%)";
-}
-
-function nextSlide(){
-index = (index + 1) % slides.length;
-updateCarousel();
-}
-
-function prevSlide(){
-index = (index - 1 + slides.length) % slides.length;
-updateCarousel();
-}
-
-</script>
+<a class="floating-btn" href="https://rzp.io/rzp/bbEGEbM">
+Start Authority Engine
+</a>
 
 </body>
 </html>
