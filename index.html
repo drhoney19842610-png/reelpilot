@@ -71,7 +71,6 @@ margin:auto;
 .hero p{
 font-size:20px;
 margin:25px 0 40px;
-opacity:0.95;
 }
 
 /* BUTTON */
@@ -86,11 +85,22 @@ font-weight:bold;
 text-decoration:none;
 display:inline-block;
 box-shadow:0 10px 30px rgba(0,0,0,0.2);
-transition:0.2s;
 }
 
-.button:hover{
-transform:translateY(-3px);
+/* FLOATING BUTTON */
+
+.floating-btn{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#2b7cff;
+color:white;
+padding:16px 24px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+z-index:999;
 }
 
 /* SECTIONS */
@@ -124,87 +134,25 @@ width:280px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* DEMO */
+/* PHONE MOCKUP */
 
-.demo{
-max-width:700px;
+.phone{
+width:260px;
+height:500px;
+background:black;
+border-radius:30px;
+padding:15px;
 margin:auto;
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+.phone-screen{
 background:white;
-padding:40px;
-border-radius:14px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+height:100%;
+border-radius:20px;
+padding:20px;
 text-align:left;
-}
-
-/* TESTIMONIAL */
-
-.testimonial{
-max-width:700px;
-margin:auto;
-font-size:18px;
-background:white;
-padding:40px;
-border-radius:14px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-/* PRICING */
-
-.pricing-card{
-background:white;
-padding:45px;
-border-radius:16px;
-max-width:400px;
-margin:auto;
-box-shadow:0 10px 40px rgba(0,0,0,0.12);
-}
-
-.price{
-font-size:48px;
-color:#2b7cff;
-font-weight:bold;
-margin:20px 0;
-}
-
-.highlight{
-color:#ff4d4d;
-font-weight:bold;
-margin-top:15px;
-}
-
-/* FAQ */
-
-.faq{
-max-width:800px;
-margin:auto;
-text-align:left;
-}
-
-/* EMAIL */
-
-.email-box{
-background:white;
-padding:40px;
-border-radius:14px;
-max-width:500px;
-margin:auto;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-.email-box input{
-padding:12px;
-width:70%;
-border:1px solid #ddd;
-border-radius:6px;
-}
-
-.email-box button{
-padding:12px 20px;
-border:none;
-background:#2b7cff;
-color:white;
-border-radius:6px;
-cursor:pointer;
+overflow:hidden;
 }
 
 /* CAROUSEL */
@@ -243,6 +191,23 @@ border-radius:6px;
 cursor:pointer;
 }
 
+/* PRICING */
+
+.pricing-card{
+background:white;
+padding:45px;
+border-radius:16px;
+max-width:400px;
+margin:auto;
+box-shadow:0 10px 40px rgba(0,0,0,0.12);
+}
+
+.price{
+font-size:48px;
+color:#2b7cff;
+font-weight:bold;
+}
+
 /* FOOTER */
 
 .footer{
@@ -258,6 +223,8 @@ text-align:center;
 
 <body>
 
+<!-- NAVBAR -->
+
 <div class="nav">
 <div class="logo">🚀 ReelPilot</div>
 <div>
@@ -267,9 +234,12 @@ text-align:center;
 </div>
 </div>
 
+<!-- HERO -->
+
 <div class="hero" id="join">
 
 <h1>15 High-Converting Reels Every Week</h1>
+
 <p>The authority-building content engine for coaches & mentors.</p>
 
 <a class="button" href="https://rzp.io/rzp/bbEGEbM">
@@ -277,6 +247,8 @@ Become a Founding Member – ₹1599/month
 </a>
 
 </div>
+
+<!-- FEATURES -->
 
 <div class="section" id="features">
 
@@ -303,6 +275,37 @@ Become a Founding Member – ₹1599/month
 
 </div>
 
+<!-- PHONE REEL PREVIEW -->
+
+<div class="section">
+
+<h2>Instagram-Style Reel Preview</h2>
+
+<div class="phone">
+
+<div class="phone-screen">
+
+<b>Hook</b><br>
+90% of coaches struggle to get clients because their content attracts followers, not buyers.
+
+<br><br>
+
+<b>Insight</b><br>
+Authority content speaks directly to problems buyers already pay to solve.
+
+<br><br>
+
+<b>CTA</b><br>
+Comment "AUTHORITY" if you want more frameworks.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- REEL CAROUSEL -->
+
 <div class="section">
 
 <h2>Real Reel Examples</h2>
@@ -313,31 +316,19 @@ Become a Founding Member – ₹1599/month
 
 <div class="carousel-item">
 <div class="reel-card">
-<b>Hook:</b> 90% of coaches struggle because their content attracts followers, not buyers.
-<br><br>
-<b>Insight:</b> Authority content speaks to problems buyers already pay to solve.
-<br><br>
-<b>CTA:</b> Comment "AUTHORITY".
-</div>
-</div>
-
-<div class="carousel-item">
-<div class="reel-card">
 <b>Hook:</b> If your reels get views but no clients, you're attracting the wrong audience.
-<br><br>
-<b>Insight:</b> Authority content filters serious buyers.
-<br><br>
-<b>CTA:</b> Save this reel.
 </div>
 </div>
 
 <div class="carousel-item">
 <div class="reel-card">
 <b>Hook:</b> Most coaches give too much value for free.
-<br><br>
-<b>Insight:</b> Give insight publicly, sell implementation privately.
-<br><br>
-<b>CTA:</b> Follow for more frameworks.
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="reel-card">
+<b>Hook:</b> Authority content converts followers into buyers.
 </div>
 </div>
 
@@ -352,37 +343,7 @@ Become a Founding Member – ₹1599/month
 
 </div>
 
-<div class="section">
-
-<h2>Free Sample Reel Script</h2>
-
-<div class="demo">
-
-<b>Hook:</b> 90% of coaches fail to convert followers into clients.
-
-<br><br>
-
-<b>Insight:</b> Buyers respond to authority, not entertainment.
-
-<br><br>
-
-<b>CTA:</b> Follow for more authority frameworks.
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Why ReelPilot Was Built</h2>
-
-<p style="max-width:700px;margin:auto;font-size:18px;line-height:1.6">
-
-ReelPilot helps coaches turn social media content into real clients by giving structured reel frameworks and authority plans.
-
-</p>
-
-</div>
+<!-- PRICING -->
 
 <div class="section" id="pricing">
 
@@ -398,27 +359,6 @@ ReelPilot helps coaches turn social media content into real clients by giving st
 Start Authority Engine
 </a>
 
-<p class="highlight">Only first 50 founding members get this price.</p>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Frequently Asked Questions</h2>
-
-<div class="faq">
-
-<h3>Do I need editing skills?</h3>
-<p>No. Scripts are ready to use.</p>
-
-<h3>Who is this for?</h3>
-<p>Coaches, mentors and consultants building authority.</p>
-
-<h3>How many reels do I get?</h3>
-<p>15 reels every week.</p>
-
 </div>
 
 </div>
@@ -426,6 +366,12 @@ Start Authority Engine
 <div class="footer">
 © ReelPilot AI
 </div>
+
+<!-- FLOATING BUTTON -->
+
+<a class="floating-btn" href="https://rzp.io/rzp/bbEGEbM">
+Start Authority Engine
+</a>
 
 <script>
 
