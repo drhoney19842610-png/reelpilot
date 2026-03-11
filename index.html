@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <title>ReelPilot AI</title>
@@ -7,60 +8,61 @@
 <style>
 
 body{
-font-family: 'Segoe UI', Arial;
+font-family:'Segoe UI',Arial;
 margin:0;
-background:#f5f7fb;
-color:#222;
+background:#0f172a;
+color:white;
 text-align:center;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
-padding:100px 20px;
-background:linear-gradient(135deg,#2b7cff,#6a5cff);
-color:white;
+padding:120px 20px;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
 }
 
 .hero h1{
-font-size:46px;
-margin-bottom:15px;
+font-size:48px;
+max-width:800px;
+margin:auto;
 }
 
 .hero p{
 font-size:20px;
 opacity:0.9;
-margin-bottom:35px;
+margin:20px 0 40px;
 }
 
 /* BUTTON */
 
-button{
+.button{
 background:white;
-color:#2b7cff;
-border:none;
-padding:16px 34px;
+color:#2563eb;
+padding:16px 36px;
 border-radius:10px;
 font-size:18px;
 font-weight:bold;
-cursor:pointer;
-box-shadow:0 6px 18px rgba(0,0,0,0.15);
+text-decoration:none;
+display:inline-block;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
 transition:0.2s;
 }
 
-button:hover{
+.button:hover{
 transform:translateY(-2px);
 }
 
-/* SECTION */
+/* SECTIONS */
 
 .section{
 padding:80px 20px;
+background:#0f172a;
 }
 
 .section h2{
-font-size:34px;
-margin-bottom:40px;
+font-size:36px;
+margin-bottom:50px;
 }
 
 /* CARDS */
@@ -68,53 +70,58 @@ margin-bottom:40px;
 .cards{
 display:flex;
 justify-content:center;
-gap:25px;
 flex-wrap:wrap;
+gap:25px;
 max-width:1100px;
 margin:auto;
 }
 
 .card{
-background:white;
+background:#1e293b;
 padding:30px;
 border-radius:14px;
 width:280px;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
 
 .card h3{
 margin-top:0;
-font-size:20px;
 }
 
 /* PRICING */
 
-.pricing{
-max-width:400px;
+.pricing-card{
+background:#1e293b;
+padding:40px;
+border-radius:16px;
+max-width:380px;
 margin:auto;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
 }
 
 .price{
-font-size:48px;
+font-size:46px;
+color:#60a5fa;
 font-weight:bold;
 margin:20px 0;
-color:#2b7cff;
 }
 
 .small{
+opacity:0.7;
+margin-top:20px;
 font-size:14px;
-color:#666;
-margin-top:15px;
 }
 
+/* FOOTER */
+
 .footer{
-margin-top:80px;
-padding:30px;
+padding:40px;
 font-size:14px;
-color:#777;
+opacity:0.6;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -125,10 +132,10 @@ color:#777;
 
 <h1>15 High-Converting Reels Every Week</h1>
 
-<p>Authority-building content system for coaches, mentors & consultants.</p>
+<p>The authority-building content engine for coaches & mentors.</p>
 
-<a href="https://rzp.io/rzp/bbEGEbM">
-<button>Become a Founding Member – ₹1599/month</button>
+<a class="button" href="https://rzp.io/rzp/bbEGEbM">
+Become a Founding Member – ₹1599/month
 </a>
 
 </div>
@@ -143,17 +150,17 @@ color:#777;
 
 <div class="card">
 <h3>15 Ready-to-Post Reels</h3>
-<p>Hook, script, caption and CTA designed for engagement.</p>
+<p>Hooks, scripts, captions and CTAs engineered for engagement.</p>
 </div>
 
 <div class="card">
 <h3>7-Day Authority Plan</h3>
-<p>A weekly roadmap to build trust and position yourself as an expert.</p>
+<p>A weekly roadmap to position yourself as a trusted expert.</p>
 </div>
 
 <div class="card">
 <h3>Client Attraction System</h3>
-<p>Turn content into conversations, leads and coaching clients.</p>
+<p>Turn your content into conversations, leads and coaching clients.</p>
 </div>
 
 </div>
@@ -164,7 +171,7 @@ color:#777;
 
 <div class="section">
 
-<h2>How It Works</h2>
+<h2>How ReelPilot Works</h2>
 
 <div class="cards">
 
@@ -174,13 +181,13 @@ color:#777;
 </div>
 
 <div class="card">
-<h3>2. Receive Content</h3>
-<p>Get 15 powerful reels and a weekly authority plan.</p>
+<h3>2. Receive Weekly Content</h3>
+<p>Get 15 powerful reels + authority plan every week.</p>
 </div>
 
 <div class="card">
 <h3>3. Grow Authority</h3>
-<p>Post consistently and turn followers into paying clients.</p>
+<p>Turn followers into paying coaching clients.</p>
 </div>
 
 </div>
@@ -193,14 +200,16 @@ color:#777;
 
 <h2>Founding Member Pricing</h2>
 
-<div class="card pricing">
+<div class="pricing-card">
 
 <div class="price">₹1599 / month</div>
 
 <p>15 reels every week + authority growth system.</p>
 
-<a href="https://rzp.io/rzp/bbEGEbM">
-<button>Start Authority Engine</button>
+<br>
+
+<a class="button" href="https://rzp.io/rzp/bbEGEbM">
+Start Authority Engine
 </a>
 
 <p class="small">
