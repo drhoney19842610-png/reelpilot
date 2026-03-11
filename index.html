@@ -7,53 +7,111 @@
 <style>
 
 body{
-font-family: Arial;
+font-family: 'Segoe UI', Arial;
 margin:0;
-background:#f7f9fc;
+background:#f5f7fb;
+color:#222;
 text-align:center;
 }
 
+/* HERO SECTION */
+
 .hero{
+padding:100px 20px;
+background:linear-gradient(135deg,#2b7cff,#6a5cff);
+color:white;
+}
+
+.hero h1{
+font-size:46px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+opacity:0.9;
+margin-bottom:35px;
+}
+
+/* BUTTON */
+
+button{
+background:white;
+color:#2b7cff;
+border:none;
+padding:16px 34px;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 6px 18px rgba(0,0,0,0.15);
+transition:0.2s;
+}
+
+button:hover{
+transform:translateY(-2px);
+}
+
+/* SECTION */
+
+.section{
 padding:80px 20px;
 }
 
-h1{
-font-size:42px;
+.section h2{
+font-size:34px;
+margin-bottom:40px;
 }
 
-.section{
-padding:60px 20px;
-}
+/* CARDS */
 
 .cards{
 display:flex;
 justify-content:center;
-gap:20px;
+gap:25px;
 flex-wrap:wrap;
+max-width:1100px;
+margin:auto;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:12px;
-width:260px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
+padding:30px;
+border-radius:14px;
+width:280px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card h3{
+margin-top:0;
+font-size:20px;
+}
+
+/* PRICING */
+
+.pricing{
+max-width:400px;
+margin:auto;
 }
 
 .price{
-font-size:38px;
+font-size:48px;
 font-weight:bold;
 margin:20px 0;
+color:#2b7cff;
 }
 
-button{
-background:#2b7cff;
-color:white;
-border:none;
-padding:14px 28px;
-border-radius:8px;
-font-size:16px;
-cursor:pointer;
+.small{
+font-size:14px;
+color:#666;
+margin-top:15px;
+}
+
+.footer{
+margin-top:80px;
+padding:30px;
+font-size:14px;
+color:#777;
 }
 
 </style>
@@ -61,15 +119,21 @@ cursor:pointer;
 
 <body>
 
+<!-- HERO -->
+
 <div class="hero">
 
-<h1>15 High-Converting Reels Every Week Without Hiring an Editor</h1>
+<h1>15 High-Converting Reels Every Week</h1>
 
-<p>Built specifically for business coaches, mentors & consultants.</p>
+<p>Authority-building content system for coaches, mentors & consultants.</p>
 
-<button>Become a Founding Member</button>
+<a href="https://rzp.io/rzp/bbEGEbM">
+<button>Become a Founding Member – ₹1599/month</button>
+</a>
 
 </div>
+
+<!-- FEATURES -->
 
 <div class="section">
 
@@ -79,22 +143,24 @@ cursor:pointer;
 
 <div class="card">
 <h3>15 Ready-to-Post Reels</h3>
-<p>Scripted, structured & optimized for engagement.</p>
+<p>Hook, script, caption and CTA designed for engagement.</p>
 </div>
 
 <div class="card">
 <h3>7-Day Authority Plan</h3>
-<p>Step-by-step posting strategy to position you as an expert.</p>
+<p>A weekly roadmap to build trust and position yourself as an expert.</p>
 </div>
 
 <div class="card">
-<h3>Business Growth System</h3>
-<p>Turn weekly content into leads and clients.</p>
+<h3>Client Attraction System</h3>
+<p>Turn content into conversations, leads and coaching clients.</p>
 </div>
 
 </div>
 
 </div>
+
+<!-- HOW IT WORKS -->
 
 <div class="section">
 
@@ -103,44 +169,50 @@ cursor:pointer;
 <div class="cards">
 
 <div class="card">
-<h3>1. Sign Up</h3>
-<p>Join as a founding member.</p>
+<h3>1. Join</h3>
+<p>Become a founding member of ReelPilot.</p>
 </div>
 
 <div class="card">
-<h3>2. Get Weekly Content</h3>
-<p>Receive 15 ready-to-post reels every week.</p>
+<h3>2. Receive Content</h3>
+<p>Get 15 powerful reels and a weekly authority plan.</p>
 </div>
 
 <div class="card">
-<h3>3. Execute & Grow</h3>
-<p>Follow the plan and turn content into leads.</p>
+<h3>3. Grow Authority</h3>
+<p>Post consistently and turn followers into paying clients.</p>
 </div>
 
 </div>
 
 </div>
+
+<!-- PRICING -->
 
 <div class="section">
 
 <h2>Founding Member Pricing</h2>
 
-<div class="card" style="margin:auto">
+<div class="card pricing">
 
-<div class="price">$19 / month</div>
+<div class="price">₹1599 / month</div>
 
 <p>15 reels every week + authority growth system.</p>
 
 <a href="https://rzp.io/rzp/bbEGEbM">
-<button>Become a Founding Member – ₹1599/month</button>
+<button>Start Authority Engine</button>
 </a>
 
-<p style="font-size:14px;margin-top:15px;">
-Founding members keep $19/month forever.
+<p class="small">
+Founding members keep this price forever.
 </p>
 
 </div>
 
+</div>
+
+<div class="footer">
+© ReelPilot AI
 </div>
 
 </body>
