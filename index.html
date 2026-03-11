@@ -124,11 +124,7 @@ width:280px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-.card h3{
-margin-top:0;
-}
-
-/* DEMO SCRIPT */
+/* DEMO */
 
 .demo{
 max-width:700px;
@@ -176,12 +172,6 @@ font-weight:bold;
 margin-top:15px;
 }
 
-.small{
-opacity:0.7;
-margin-top:20px;
-font-size:14px;
-}
-
 /* FAQ */
 
 .faq{
@@ -190,11 +180,7 @@ margin:auto;
 text-align:left;
 }
 
-.faq h3{
-margin-top:25px;
-}
-
-/* EMAIL FORM */
+/* EMAIL */
 
 .email-box{
 background:white;
@@ -221,6 +207,42 @@ border-radius:6px;
 cursor:pointer;
 }
 
+/* CAROUSEL */
+
+.carousel{
+max-width:900px;
+margin:auto;
+overflow:hidden;
+}
+
+.carousel-track{
+display:flex;
+transition:transform 0.4s ease;
+}
+
+.carousel-item{
+min-width:100%;
+padding:20px;
+}
+
+.reel-card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+text-align:left;
+}
+
+.carousel-buttons button{
+background:#2b7cff;
+color:white;
+border:none;
+padding:10px 18px;
+margin:5px;
+border-radius:6px;
+cursor:pointer;
+}
+
 /* FOOTER */
 
 .footer{
@@ -236,11 +258,8 @@ text-align:center;
 
 <body>
 
-<!-- NAVBAR -->
-
 <div class="nav">
 <div class="logo">🚀 ReelPilot</div>
-
 <div>
 <a href="#features">Features</a>
 <a href="#pricing">Pricing</a>
@@ -248,12 +267,9 @@ text-align:center;
 </div>
 </div>
 
-<!-- HERO -->
-
 <div class="hero" id="join">
 
 <h1>15 High-Converting Reels Every Week</h1>
-
 <p>The authority-building content engine for coaches & mentors.</p>
 
 <a class="button" href="https://rzp.io/rzp/bbEGEbM">
@@ -261,8 +277,6 @@ Become a Founding Member – ₹1599/month
 </a>
 
 </div>
-
-<!-- FEATURES -->
 
 <div class="section" id="features">
 
@@ -289,7 +303,54 @@ Become a Founding Member – ₹1599/month
 
 </div>
 
-<!-- SAMPLE SCRIPT -->
+<div class="section">
+
+<h2>Real Reel Examples</h2>
+
+<div class="carousel">
+
+<div class="carousel-track" id="carouselTrack">
+
+<div class="carousel-item">
+<div class="reel-card">
+<b>Hook:</b> 90% of coaches struggle because their content attracts followers, not buyers.
+<br><br>
+<b>Insight:</b> Authority content speaks to problems buyers already pay to solve.
+<br><br>
+<b>CTA:</b> Comment "AUTHORITY".
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="reel-card">
+<b>Hook:</b> If your reels get views but no clients, you're attracting the wrong audience.
+<br><br>
+<b>Insight:</b> Authority content filters serious buyers.
+<br><br>
+<b>CTA:</b> Save this reel.
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="reel-card">
+<b>Hook:</b> Most coaches give too much value for free.
+<br><br>
+<b>Insight:</b> Give insight publicly, sell implementation privately.
+<br><br>
+<b>CTA:</b> Follow for more frameworks.
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="carousel-buttons">
+<button onclick="prevSlide()">Prev</button>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+</div>
 
 <div class="section">
 
@@ -297,67 +358,19 @@ Become a Founding Member – ₹1599/month
 
 <div class="demo">
 
-<b>Hook:</b>
-90% of coaches struggle to get clients because their content attracts followers, not buyers.
+<b>Hook:</b> 90% of coaches fail to convert followers into clients.
 
 <br><br>
 
-<b>Insight:</b>
-Authority content speaks directly to problems buyers are already paying to solve.
+<b>Insight:</b> Buyers respond to authority, not entertainment.
 
 <br><br>
 
-<b>CTA:</b>
-Follow for more authority-building content frameworks.
+<b>CTA:</b> Follow for more authority frameworks.
 
 </div>
 
 </div>
-
-<!-- LIVE DEMO -->
-
-<div class="section">
-
-<h2>Live Demo Reel Script</h2>
-
-<div class="demo">
-
-<b>Hook:</b>
-If your reels are getting likes but no clients, you're posting the wrong content type.
-
-<br><br>
-
-<b>Framework:</b>
-Authority Reel = Hook → Insight → Micro Framework → CTA.
-
-<br><br>
-
-<b>CTA:</b>
-Comment "REELS" if you want more frameworks like this.
-
-</div>
-
-</div>
-
-<!-- EMAIL CAPTURE -->
-
-<div class="section">
-
-<h2>Get Free Weekly Reel Ideas</h2>
-
-<div class="email-box">
-
-<p>Join the ReelPilot list and receive authority reel ideas every week.</p>
-
-<input type="email" placeholder="Enter your email">
-
-<button>Join Free</button>
-
-</div>
-
-</div>
-
-<!-- FOUNDER STORY -->
 
 <div class="section">
 
@@ -365,15 +378,11 @@ Comment "REELS" if you want more frameworks like this.
 
 <p style="max-width:700px;margin:auto;font-size:18px;line-height:1.6">
 
-ReelPilot was built to help coaches turn social media content into real clients.
-Most creators struggle because they post random content without a clear authority strategy.
-ReelPilot provides structured reels and weekly authority plans designed for conversions.
+ReelPilot helps coaches turn social media content into real clients by giving structured reel frameworks and authority plans.
 
 </p>
 
 </div>
-
-<!-- PRICING -->
 
 <div class="section" id="pricing">
 
@@ -389,19 +398,11 @@ ReelPilot provides structured reels and weekly authority plans designed for conv
 Start Authority Engine
 </a>
 
-<p class="highlight">
-Only first 50 founding members get this price.
-</p>
-
-<p class="small">
-Founding members keep this price forever.
-</p>
+<p class="highlight">Only first 50 founding members get this price.</p>
 
 </div>
 
 </div>
-
-<!-- FAQ -->
 
 <div class="section">
 
@@ -410,16 +411,13 @@ Founding members keep this price forever.
 <div class="faq">
 
 <h3>Do I need editing skills?</h3>
-<p>No. You get ready-to-use scripts designed for simple reels.</p>
+<p>No. Scripts are ready to use.</p>
 
 <h3>Who is this for?</h3>
-<p>Coaches, mentors, consultants and creators building authority.</p>
+<p>Coaches, mentors and consultants building authority.</p>
 
 <h3>How many reels do I get?</h3>
-<p>You receive 15 reels every week.</p>
-
-<h3>Can I cancel anytime?</h3>
-<p>Yes, you can cancel your membership anytime.</p>
+<p>15 reels every week.</p>
 
 </div>
 
@@ -428,6 +426,28 @@ Founding members keep this price forever.
 <div class="footer">
 © ReelPilot AI
 </div>
+
+<script>
+
+let index = 0;
+const track = document.getElementById("carouselTrack");
+const slides = document.querySelectorAll(".carousel-item");
+
+function updateCarousel(){
+track.style.transform = "translateX(-" + index * 100 + "%)";
+}
+
+function nextSlide(){
+index = (index + 1) % slides.length;
+updateCarousel();
+}
+
+function prevSlide(){
+index = (index - 1 + slides.length) % slides.length;
+updateCarousel();
+}
+
+</script>
 
 </body>
 </html>
