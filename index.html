@@ -298,24 +298,82 @@ Become a Founding Member – ₹1599/month
 
 <h2>Free Sample Reel Script</h2>
 
-<div class="demo">
+<p>Select Language:</p>
 
-<b>Hook:</b>
-90% of coaches struggle to get clients because their content attracts followers, not buyers.
+<select id="languageSelect" onchange="changeLanguage()">
+<option value="english">English</option>
+<option value="hindi">Hindi</option>
+<option value="marathi">Marathi</option>
+<option value="gujrati">Gujrati</option>
+<option value="punjabi">Punjabi</option>
+<option value="telgu">Telgu</option>
+<option value="tamil">Tamil</option>
+<option value="mallyalam">Mallyalam</option>
+<option value="bengali">Bengali</option>
+</select>
+
+<script>
+
+function changeLanguage(){
+
+let lang = document.getElementById("languageSelect").value;
+let box = document.getElementById("scriptBox");
+
+if(lang==="english"){
+box.innerHTML = 
+<b>Hook:</b><br>
+Most coaches struggle to get clients on Instagram.
 
 <br><br>
 
-<b>Insight:</b>
-Authority content speaks directly to problems buyers are already paying to solve.
+<b>Insight:</b><br>
+Because their content is designed for likes, not authority.
 
 <br><br>
 
-<b>CTA:</b>
-Follow for more authority-building content frameworks.
+<b>CTA:</b><br>
+Follow for more authority strategies.
 
-</div>
+}
 
-</div>
+if(lang==="hindi"){
+box.innerHTML = 
+<b>Hook:</b><br>
+90% coaches Instagram par content dalte hain,
+lekin unhe clients nahi milte.
+
+<br><br>
+
+<b>Insight:</b><br>
+Kyuki unka content authority build nahi karta.
+
+<br><br>
+
+<b>CTA:</b><br>
+Agar aapko aise aur frameworks chahiye toh follow karein.
+}
+
+if(lang==="marathi"){
+box.innerHTML =
+<b>Hook:</b><br>
+90% coaches Instagram var content taktat
+pan tyanna clients milat nahi.
+
+<br><br>
+
+<b>Insight:</b><br>
+Karan tyanchya content madhye authority naste.
+
+<br><br>
+
+<b>CTA:</b><br>
+Ashe adhik strategies sathi follow kara.
+
+}
+
+}
+
+</script>
 
 <div class="section">
 
