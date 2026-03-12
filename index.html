@@ -71,7 +71,6 @@ margin:auto;
 .hero p{
 font-size:20px;
 margin:25px 0 40px;
-opacity:0.95;
 }
 
 /* BUTTON */
@@ -86,11 +85,6 @@ font-weight:bold;
 text-decoration:none;
 display:inline-block;
 box-shadow:0 10px 30px rgba(0,0,0,0.2);
-transition:0.2s;
-}
-
-.button:hover{
-transform:translateY(-3px);
 }
 
 /* SECTIONS */
@@ -136,16 +130,12 @@ box-shadow:0 10px 25px rgba(0,0,0,0.08);
 text-align:left;
 }
 
-/* TESTIMONIAL */
+/* LANGUAGE SELECTOR */
 
-.testimonial{
-max-width:700px;
-margin:auto;
-font-size:18px;
-background:white;
-padding:40px;
-border-radius:14px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+select{
+padding:10px;
+font-size:16px;
+margin-bottom:20px;
 }
 
 /* PRICING */
@@ -163,19 +153,6 @@ box-shadow:0 10px 40px rgba(0,0,0,0.12);
 font-size:48px;
 color:#2b7cff;
 font-weight:bold;
-margin:20px 0;
-}
-
-.highlight{
-color:#ff4d4d;
-font-weight:bold;
-margin-top:15px;
-}
-
-.small{
-opacity:0.7;
-margin-top:20px;
-font-size:14px;
 }
 
 /* FAQ */
@@ -184,37 +161,6 @@ font-size:14px;
 max-width:800px;
 margin:auto;
 text-align:left;
-}
-
-.faq h3{
-margin-top:25px;
-}
-
-/* EMAIL FORM */
-
-.email-box{
-background:white;
-padding:40px;
-border-radius:14px;
-max-width:500px;
-margin:auto;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-.email-box input{
-padding:12px;
-width:70%;
-border:1px solid #ddd;
-border-radius:6px;
-}
-
-.email-box button{
-padding:12px 20px;
-border:none;
-background:#2b7cff;
-color:white;
-border-radius:6px;
-cursor:pointer;
 }
 
 /* FLOATING BUTTON */
@@ -294,6 +240,8 @@ Become a Founding Member – ₹1599/month
 
 </div>
 
+<!-- SAMPLE SCRIPT WITH LANGUAGE SELECTOR -->
+
 <div class="section">
 
 <h2>Free Sample Reel Script</h2>
@@ -304,23 +252,10 @@ Become a Founding Member – ₹1599/month
 <option value="english">English</option>
 <option value="hindi">Hindi</option>
 <option value="marathi">Marathi</option>
-<option value="gujrati">Gujrati</option>
-<option value="punjabi">Punjabi</option>
-<option value="telgu">Telgu</option>
-<option value="tamil">Tamil</option>
-<option value="mallyalam">Mallyalam</option>
-<option value="bengali">Bengali</option>
 </select>
 
-<script>
+<div class="demo" id="scriptBox">
 
-function changeLanguage(){
-
-let lang = document.getElementById("languageSelect").value;
-let box = document.getElementById("scriptBox");
-
-if(lang==="english"){
-box.innerHTML = 
 <b>Hook:</b><br>
 Most coaches struggle to get clients on Instagram.
 
@@ -334,58 +269,7 @@ Because their content is designed for likes, not authority.
 <b>CTA:</b><br>
 Follow for more authority strategies.
 
-}
-
-if(lang==="hindi"){
-box.innerHTML = 
-<b>Hook:</b><br>
-90% coaches Instagram par content dalte hain,
-lekin unhe clients nahi milte.
-
-<br><br>
-
-<b>Insight:</b><br>
-Kyuki unka content authority build nahi karta.
-
-<br><br>
-
-<b>CTA:</b><br>
-Agar aapko aise aur frameworks chahiye toh follow karein.
-}
-
-if(lang==="marathi"){
-box.innerHTML =
-<b>Hook:</b><br>
-90% coaches Instagram var content taktat
-pan tyanna clients milat nahi.
-
-<br><br>
-
-<b>Insight:</b><br>
-Karan tyanchya content madhye authority naste.
-
-<br><br>
-
-<b>CTA:</b><br>
-Ashe adhik strategies sathi follow kara.
-
-}
-
-}
-
-</script>
-
-<div class="section">
-
-<h2>Why ReelPilot Was Built</h2>
-
-<p style="max-width:700px;margin:auto;font-size:18px;line-height:1.6">
-
-ReelPilot was built to help coaches turn social media content into real clients.
-Most creators struggle because they post random content without a clear authority strategy.
-ReelPilot provides structured reels and weekly authority plans designed for conversions.
-
-</p>
+</div>
 
 </div>
 
@@ -403,14 +287,6 @@ ReelPilot provides structured reels and weekly authority plans designed for conv
 Start Authority Engine
 </a>
 
-<p class="highlight">
-Only first 50 founding members get this price.
-</p>
-
-<p class="small">
-Founding members keep this price forever.
-</p>
-
 </div>
 
 </div>
@@ -422,16 +298,13 @@ Founding members keep this price forever.
 <div class="faq">
 
 <h3>Do I need editing skills?</h3>
-<p>No. You get ready-to-use scripts designed for simple reels.</p>
+<p>No. Scripts are ready to use.</p>
 
 <h3>Who is this for?</h3>
-<p>Coaches, mentors, consultants and creators building authority.</p>
+<p>Coaches, mentors and consultants building authority.</p>
 
 <h3>How many reels do I get?</h3>
-<p>You receive 15 reels every week.</p>
-
-<h3>Can I cancel anytime?</h3>
-<p>Yes, you can cancel your membership anytime.</p>
+<p>15 reels every week.</p>
 
 </div>
 
@@ -441,11 +314,67 @@ Founding members keep this price forever.
 © ReelPilot AI
 </div>
 
-<!-- Floating Button -->
-
 <a class="floating-btn" href="https://rzp.io/rzp/bbEGEbM">
 Start Authority Engine
 </a>
+
+<script>
+
+function changeLanguage(){
+
+let lang=document.getElementById("languageSelect").value;
+let box=document.getElementById("scriptBox");
+
+if(lang==="english"){
+box.innerHTML=`<b>Hook:</b><br>
+Most coaches struggle to get clients on Instagram.
+
+<br><br>
+
+<b>Insight:</b><br>
+Because their content is designed for likes, not authority.
+
+<br><br>
+
+<b>CTA:</b><br>
+Follow for more authority strategies.`;
+}
+
+if(lang==="hindi"){
+box.innerHTML=`<b>Hook:</b><br>
+90% coaches Instagram par content dalte hain
+lekin unhe clients nahi milte.
+
+<br><br>
+
+<b>Insight:</b><br>
+Kyuki unka content authority build nahi karta.
+
+<br><br>
+
+<b>CTA:</b><br>
+Agar aapko aise aur frameworks chahiye toh follow karein.`;
+}
+
+if(lang==="marathi"){
+box.innerHTML=`<b>Hook:</b><br>
+90% coaches Instagram var content taktat
+pan tyanna clients milat nahi.
+
+<br><br>
+
+<b>Insight:</b><br>
+Karan tyanchya content madhye authority naste.
+
+<br><br>
+
+<b>CTA:</b><br>
+Ashe adhik strategies sathi follow kara.`;
+}
+
+}
+
+</script>
 
 </body>
 </html>
