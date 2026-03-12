@@ -24,6 +24,68 @@ margin:0;
 background:#f6f8fc;
 color:#222;
 scroll-behavior:smooth;
+/* -------- LANGUAGE SELECTOR STYLE -------- */
+
+select{
+padding:14px 20px;
+font-size:18px;
+border-radius:10px;
+border:2px solid #2b7cff;
+background:white;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+margin-bottom:25px;
+}
+
+select:hover{
+border-color:#7c4dff;
+}
+
+
+/* -------- BUTTON HOVER EFFECT -------- */
+
+.button{
+background:white;
+color:#2b7cff;
+padding:16px 36px;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+text-decoration:none;
+display:inline-block;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+transition:all 0.25s ease;
+}
+
+.button:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+background:#2b7cff;
+color:white;
+}
+
+
+/* -------- FLOATING BUTTON EFFECT -------- */
+
+.floating-btn{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#2b7cff;
+color:white;
+padding:16px 24px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+z-index:999;
+transition:all 0.25s ease;
+}
+
+.floating-btn:hover{
+background:#1a5edb;
+transform:translateY(-3px);
+}
 }
 
 /* NAVBAR */
